@@ -6,8 +6,8 @@ port = 1883
 topic = "emqx/auth"
 # generate client ID with pub prefix randomly
 client_id = f'python-mqtt-{random.randint(0, 100)}'
-username = 'user1'
-password = '1234'
+username = 'newUser'
+password = 'ab1234'
 
 def connect_mqtt() -> mqtt_client:
     def on_connect(client, userdata, flags, rc):
