@@ -1,1 +1,799 @@
-https://documenter.getpostman.com/view/18008381/UVC9fjsf
+http://localhost:8081/api/v4
+
+{
+    "data": [
+        {
+            "path": "/acl/clientid",
+            "name": "list_clientid",
+            "method": "GET",
+            "descr": "List available mnesia in the cluster"
+        },
+        {
+            "path": "/acl/username",
+            "name": "list_username",
+            "method": "GET",
+            "descr": "List available mnesia in the cluster"
+        },
+        {
+            "path": "/acl/$all",
+            "name": "list_all",
+            "method": "GET",
+            "descr": "List available mnesia in the cluster"
+        },
+        {
+            "path": "/acl/clientid/:clientid",
+            "name": "lookup_clientid",
+            "method": "GET",
+            "descr": "Lookup mnesia in the cluster"
+        },
+        {
+            "path": "/acl/username/:username",
+            "name": "lookup_username",
+            "method": "GET",
+            "descr": "Lookup mnesia in the cluster"
+        },
+        {
+            "path": "/acl",
+            "name": "add",
+            "method": "POST",
+            "descr": "Add mnesia in the cluster"
+        },
+        {
+            "path": "/acl/clientid/:clientid/topic/:topic",
+            "name": "delete_clientid",
+            "method": "DELETE",
+            "descr": "Delete mnesia in the cluster"
+        },
+        {
+            "path": "/acl/username/:username/topic/:topic",
+            "name": "delete_username",
+            "method": "DELETE",
+            "descr": "Delete mnesia in the cluster"
+        },
+        {
+            "path": "/acl/$all/topic/:topic",
+            "name": "delete_all",
+            "method": "DELETE",
+            "descr": "Delete mnesia in the cluster"
+        },
+        {
+            "path": "/auth_clientid",
+            "name": "list_clientid",
+            "method": "GET",
+            "descr": "List available clientid in the cluster"
+        },
+        {
+            "path": "/auth_clientid/:clientid",
+            "name": "lookup_clientid",
+            "method": "GET",
+            "descr": "Lookup clientid in the cluster"
+        },
+        {
+            "path": "/auth_clientid",
+            "name": "add_clientid",
+            "method": "POST",
+            "descr": "Add clientid in the cluster"
+        },
+        {
+            "path": "/auth_clientid/:clientid",
+            "name": "update_clientid",
+            "method": "PUT",
+            "descr": "Update clientid in the cluster"
+        },
+        {
+            "path": "/auth_clientid/:clientid",
+            "name": "delete_clientid",
+            "method": "DELETE",
+            "descr": "Delete clientid in the cluster"
+        },
+        {
+            "path": "/auth_username",
+            "name": "list_username",
+            "method": "GET",
+            "descr": "List available username in the cluster"
+        },
+        {
+            "path": "/auth_username/:username",
+            "name": "lookup_username",
+            "method": "GET",
+            "descr": "Lookup username in the cluster"
+        },
+        {
+            "path": "/auth_username",
+            "name": "add_username",
+            "method": "POST",
+            "descr": "Add username in the cluster"
+        },
+        {
+            "path": "/auth_username/:username",
+            "name": "update_username",
+            "method": "PUT",
+            "descr": "Update username in the cluster"
+        },
+        {
+            "path": "/auth_username/:username",
+            "name": "delete_username",
+            "method": "DELETE",
+            "descr": "Delete username in the cluster"
+        },
+        {
+            "path": "/auth",
+            "name": "auth_user",
+            "method": "POST",
+            "descr": "Authenticate an user"
+        },
+        {
+            "path": "/users/",
+            "name": "create_user",
+            "method": "POST",
+            "descr": "Create an user"
+        },
+        {
+            "path": "/users/",
+            "name": "list_users",
+            "method": "GET",
+            "descr": "List users"
+        },
+        {
+            "path": "/users/:name",
+            "name": "update_user",
+            "method": "PUT",
+            "descr": "Update an user"
+        },
+        {
+            "path": "/users/:name",
+            "name": "delete_user",
+            "method": "DELETE",
+            "descr": "Delete an user"
+        },
+        {
+            "path": "/change_pwd/:username",
+            "name": "change_pwd",
+            "method": "PUT",
+            "descr": "Change password for an user"
+        },
+        {
+            "path": "/lwm2m_channels/",
+            "name": "list",
+            "method": "GET",
+            "descr": "A list of all lwm2m channel"
+        },
+        {
+            "path": "/nodes/:node/lwm2m_channels/",
+            "name": "list",
+            "method": "GET",
+            "descr": "A list of lwm2m channel of a node"
+        },
+        {
+            "path": "/lookup_cmd/:ep/",
+            "name": "lookup_cmd",
+            "method": "GET",
+            "descr": "Send a lwm2m downlink command"
+        },
+        {
+            "path": "/nodes/:node/lookup_cmd/:ep/",
+            "name": "lookup_cmd",
+            "method": "GET",
+            "descr": "Send a lwm2m downlink command of a node"
+        },
+        {
+            "path": "/acl-cache",
+            "name": "clean_acl_cache_all",
+            "method": "DELETE",
+            "descr": "Clean acl cache on all nodes"
+        },
+        {
+            "path": "nodes/:node/acl-cache",
+            "name": "clean_acl_cache_node",
+            "method": "DELETE",
+            "descr": "Clean acl cache on specific node"
+        },
+        {
+            "path": "/alarms",
+            "name": "list_all_alarms",
+            "method": "GET",
+            "descr": "List all alarms in the cluster"
+        },
+        {
+            "path": "nodes/:node/alarms",
+            "name": "list_node_alarms",
+            "method": "GET",
+            "descr": "List all alarms on a node"
+        },
+        {
+            "path": "/alarms/activated",
+            "name": "list_all_activated_alarms",
+            "method": "GET",
+            "descr": "List all activated alarm in the cluster"
+        },
+        {
+            "path": "nodes/:node/alarms/activated",
+            "name": "list_node_activated_alarms",
+            "method": "GET",
+            "descr": "List all activated alarm on a node"
+        },
+        {
+            "path": "/alarms/deactivated",
+            "name": "list_all_deactivated_alarms",
+            "method": "GET",
+            "descr": "List all deactivated alarm in the cluster"
+        },
+        {
+            "path": "nodes/:node/alarms/deactivated",
+            "name": "list_node_deactivated_alarms",
+            "method": "GET",
+            "descr": "List all deactivated alarm on a node"
+        },
+        {
+            "path": "/alarms/deactivated",
+            "name": "deactivate_alarm",
+            "method": "POST",
+            "descr": "Delete the special alarm on a node"
+        },
+        {
+            "path": "/alarms/deactivated",
+            "name": "delete_all_deactivated_alarms",
+            "method": "DELETE",
+            "descr": "Delete all deactivated alarm in the cluster"
+        },
+        {
+            "path": "nodes/:node/alarms/deactivated",
+            "name": "delete_node_deactivated_alarms",
+            "method": "DELETE",
+            "descr": "Delete all deactivated alarm on a node"
+        },
+        {
+            "path": "/banned/",
+            "name": "list_banned",
+            "method": "GET",
+            "descr": "List banned"
+        },
+        {
+            "path": "/banned/",
+            "name": "create_banned",
+            "method": "POST",
+            "descr": "Create banned"
+        },
+        {
+            "path": "/banned/:who",
+            "name": "delete_banned",
+            "method": "DELETE",
+            "descr": "Delete banned"
+        },
+        {
+            "path": "/brokers/",
+            "name": "list_brokers",
+            "method": "GET",
+            "descr": "A list of brokers in the cluster"
+        },
+        {
+            "path": "/brokers/:node",
+            "name": "get_broker",
+            "method": "GET",
+            "descr": "Get broker info of a node"
+        },
+        {
+            "path": "/clients/",
+            "name": "list_clients",
+            "method": "GET",
+            "descr": "A list of clients on current node"
+        },
+        {
+            "path": "nodes/:node/clients/",
+            "name": "list_node_clients",
+            "method": "GET",
+            "descr": "A list of clients on specified node"
+        },
+        {
+            "path": "/clients/:clientid",
+            "name": "lookup_client",
+            "method": "GET",
+            "descr": "Lookup a client in the cluster"
+        },
+        {
+            "path": "nodes/:node/clients/:clientid",
+            "name": "lookup_node_client",
+            "method": "GET",
+            "descr": "Lookup a client on the node"
+        },
+        {
+            "path": "/clients/username/:username",
+            "name": "lookup_client_via_username",
+            "method": "GET",
+            "descr": "Lookup a client via username in the cluster"
+        },
+        {
+            "path": "/nodes/:node/clients/username/:username",
+            "name": "lookup_node_client_via_username",
+            "method": "GET",
+            "descr": "Lookup a client via username on the node "
+        },
+        {
+            "path": "/clients/:clientid",
+            "name": "kickout_client",
+            "method": "DELETE",
+            "descr": "Kick out the client in the cluster"
+        },
+        {
+            "path": "/clients/:clientid/acl_cache",
+            "name": "clean_acl_cache",
+            "method": "DELETE",
+            "descr": "Clear the ACL cache of a specified client in the cluster"
+        },
+        {
+            "path": "/clients/:clientid/acl_cache",
+            "name": "list_acl_cache",
+            "method": "GET",
+            "descr": "List the ACL cache of a specified client in the cluster"
+        },
+        {
+            "path": "/clients/:clientid/ratelimit",
+            "name": "set_ratelimit_policy",
+            "method": "POST",
+            "descr": "Set the client ratelimit policy"
+        },
+        {
+            "path": "/clients/:clientid/ratelimit",
+            "name": "clean_ratelimit",
+            "method": "DELETE",
+            "descr": "Clear the ratelimit policy"
+        },
+        {
+            "path": "/clients/:clientid/quota",
+            "name": "set_quota_policy",
+            "method": "POST",
+            "descr": "Set the client quota policy"
+        },
+        {
+            "path": "/clients/:clientid/quota",
+            "name": "clean_quota",
+            "method": "DELETE",
+            "descr": "Clear the quota policy"
+        },
+        {
+            "path": "/data/export",
+            "name": "export",
+            "method": "POST",
+            "descr": "Export data"
+        },
+        {
+            "path": "/data/export",
+            "name": "list_exported",
+            "method": "GET",
+            "descr": "List exported file"
+        },
+        {
+            "path": "/data/import",
+            "name": "import",
+            "method": "POST",
+            "descr": "Import data"
+        },
+        {
+            "path": "/data/file/:filename",
+            "name": "download",
+            "method": "GET",
+            "descr": "Download data file to local"
+        },
+        {
+            "path": "/data/file",
+            "name": "upload",
+            "method": "POST",
+            "descr": "Upload data file from local"
+        },
+        {
+            "path": "/data/file/:filename",
+            "name": "delete",
+            "method": "DELETE",
+            "descr": "Delete data file"
+        },
+        {
+            "path": "/listeners/",
+            "name": "list_listeners",
+            "method": "GET",
+            "descr": "A list of listeners in the cluster"
+        },
+        {
+            "path": "/nodes/:node/listeners",
+            "name": "list_node_listeners",
+            "method": "GET",
+            "descr": "A list of listeners on the node"
+        },
+        {
+            "path": "/listeners/:identifier/restart",
+            "name": "restart_listener",
+            "method": "PUT",
+            "descr": "Restart a listener in the cluster"
+        },
+        {
+            "path": "/nodes/:node/listeners/:identifier/restart",
+            "name": "restart_node_listener",
+            "method": "PUT",
+            "descr": "Restart a listener on a node"
+        },
+        {
+            "path": "/metrics",
+            "name": "list_all_metrics",
+            "method": "GET",
+            "descr": "A list of metrics of all nodes in the cluster"
+        },
+        {
+            "path": "/nodes/:node/metrics",
+            "name": "list_node_metrics",
+            "method": "GET",
+            "descr": "A list of metrics of a node"
+        },
+        {
+            "path": "/nodes/",
+            "name": "list_nodes",
+            "method": "GET",
+            "descr": "A list of nodes in the cluster"
+        },
+        {
+            "path": "/nodes/:node",
+            "name": "get_node",
+            "method": "GET",
+            "descr": "Lookup a node in the cluster"
+        },
+        {
+            "path": "/plugins/",
+            "name": "list_all_plugins",
+            "method": "GET",
+            "descr": "List all plugins in the cluster"
+        },
+        {
+            "path": "/nodes/:node/plugins/",
+            "name": "list_node_plugins",
+            "method": "GET",
+            "descr": "List all plugins on a node"
+        },
+        {
+            "path": "/nodes/:node/plugins/:plugin/load",
+            "name": "load_node_plugin",
+            "method": "PUT",
+            "descr": "Load a plugin"
+        },
+        {
+            "path": "/nodes/:node/plugins/:plugin/unload",
+            "name": "unload_node_plugin",
+            "method": "PUT",
+            "descr": "Unload a plugin"
+        },
+        {
+            "path": "/nodes/:node/plugins/:plugin/reload",
+            "name": "reload_node_plugin",
+            "method": "PUT",
+            "descr": "Reload a plugin"
+        },
+        {
+            "path": "/plugins/:plugin/unload",
+            "name": "unload_plugin",
+            "method": "PUT",
+            "descr": "Unload a plugin in the cluster"
+        },
+        {
+            "path": "/plugins/:plugin/reload",
+            "name": "reload_plugin",
+            "method": "PUT",
+            "descr": "Reload a plugin in the cluster"
+        },
+        {
+            "path": "/mqtt/subscribe",
+            "name": "mqtt_subscribe",
+            "method": "POST",
+            "descr": "Subscribe a topic"
+        },
+        {
+            "path": "/mqtt/publish",
+            "name": "mqtt_publish",
+            "method": "POST",
+            "descr": "Publish a MQTT message"
+        },
+        {
+            "path": "/mqtt/unsubscribe",
+            "name": "mqtt_unsubscribe",
+            "method": "POST",
+            "descr": "Unsubscribe a topic"
+        },
+        {
+            "path": "/mqtt/subscribe_batch",
+            "name": "mqtt_subscribe_batch",
+            "method": "POST",
+            "descr": "Batch subscribes topics"
+        },
+        {
+            "path": "/mqtt/publish_batch",
+            "name": "mqtt_publish_batch",
+            "method": "POST",
+            "descr": "Batch publish MQTT messages"
+        },
+        {
+            "path": "/mqtt/unsubscribe_batch",
+            "name": "mqtt_unsubscribe_batch",
+            "method": "POST",
+            "descr": "Batch unsubscribes topics"
+        },
+        {
+            "path": "/routes/",
+            "name": "list_routes",
+            "method": "GET",
+            "descr": "List routes"
+        },
+        {
+            "path": "/routes/:topic",
+            "name": "lookup_routes",
+            "method": "GET",
+            "descr": "Lookup routes to a topic"
+        },
+        {
+            "path": "/stats/",
+            "name": "list_stats",
+            "method": "GET",
+            "descr": "A list of stats of all nodes in the cluster"
+        },
+        {
+            "path": "/nodes/:node/stats/",
+            "name": "lookup_node_stats",
+            "method": "GET",
+            "descr": "A list of stats of a node"
+        },
+        {
+            "path": "/subscriptions/",
+            "name": "list_subscriptions",
+            "method": "GET",
+            "descr": "A list of subscriptions in the cluster"
+        },
+        {
+            "path": "/nodes/:node/subscriptions/",
+            "name": "list_node_subscriptions",
+            "method": "GET",
+            "descr": "A list of subscriptions on a node"
+        },
+        {
+            "path": "/subscriptions/:clientid",
+            "name": "lookup_client_subscriptions",
+            "method": "GET",
+            "descr": "A list of subscriptions of a client"
+        },
+        {
+            "path": "/nodes/:node/subscriptions/:clientid",
+            "name": "lookup_client_subscriptions_with_node",
+            "method": "GET",
+            "descr": "A list of subscriptions of a client on the node"
+        },
+        {
+            "path": "/emqx_prometheus",
+            "name": "stats",
+            "method": "GET",
+            "descr": "Get emqx all stats info"
+        },
+        {
+            "path": "/rules/",
+            "name": "create_rule",
+            "method": "POST",
+            "descr": "Create a rule"
+        },
+        {
+            "path": "/rules/:id",
+            "name": "update_rule",
+            "method": "PUT",
+            "descr": "Update a rule"
+        },
+        {
+            "path": "/rules/",
+            "name": "list_rules",
+            "method": "GET",
+            "descr": "A list of all rules"
+        },
+        {
+            "path": "/rules/:id",
+            "name": "show_rule",
+            "method": "GET",
+            "descr": "Show a rule"
+        },
+        {
+            "path": "/rules/:id",
+            "name": "delete_rule",
+            "method": "DELETE",
+            "descr": "Delete a rule"
+        },
+        {
+            "path": "/actions/",
+            "name": "list_actions",
+            "method": "GET",
+            "descr": "A list of all actions"
+        },
+        {
+            "path": "/actions/:name",
+            "name": "show_action",
+            "method": "GET",
+            "descr": "Show an action"
+        },
+        {
+            "path": "/resources/",
+            "name": "list_resources",
+            "method": "GET",
+            "descr": "A list of all resources"
+        },
+        {
+            "path": "/resources/",
+            "name": "create_resource",
+            "method": "POST",
+            "descr": "Create a resource"
+        },
+        {
+            "path": "/resources/:id",
+            "name": "update_resource",
+            "method": "PUT",
+            "descr": "Update a resource"
+        },
+        {
+            "path": "/resources/:id",
+            "name": "show_resource",
+            "method": "GET",
+            "descr": "Show a resource"
+        },
+        {
+            "path": "/resource_status/:id",
+            "name": "get_resource_status",
+            "method": "GET",
+            "descr": "Get status of a resource"
+        },
+        {
+            "path": "/resources/:id",
+            "name": "start_resource",
+            "method": "POST",
+            "descr": "Start a resource"
+        },
+        {
+            "path": "/resources/:id",
+            "name": "delete_resource",
+            "method": "DELETE",
+            "descr": "Delete a resource"
+        },
+        {
+            "path": "/resource_types/",
+            "name": "list_resource_types",
+            "method": "GET",
+            "descr": "List all resource types"
+        },
+        {
+            "path": "/resource_types/:name",
+            "name": "show_resource_type",
+            "method": "GET",
+            "descr": "Show a resource type"
+        },
+        {
+            "path": "/resource_types/:type/resources",
+            "name": "list_resources_by_type",
+            "method": "GET",
+            "descr": "List all resources of a resource type"
+        },
+        {
+            "path": "/rule_events/",
+            "name": "list_events",
+            "method": "GET",
+            "descr": "List all events with detailed info"
+        },
+        {
+            "path": "/sasl",
+            "name": "add",
+            "method": "POST",
+            "descr": "Add authentication information"
+        },
+        {
+            "path": "/sasl",
+            "name": "delete",
+            "method": "DELETE",
+            "descr": "Delete authentication information"
+        },
+        {
+            "path": "/sasl",
+            "name": "update",
+            "method": "PUT",
+            "descr": "Update authentication information"
+        },
+        {
+            "path": "/sasl",
+            "name": "get",
+            "method": "GET",
+            "descr": "Get authentication information"
+        },
+        {
+            "path": "/telemetry/status",
+            "name": "enable_telemetry",
+            "method": "PUT",
+            "descr": "Enable or disbale telemetry"
+        },
+        {
+            "path": "/telemetry/status",
+            "name": "get_telemetry_status",
+            "method": "GET",
+            "descr": "Get telemetry status"
+        },
+        {
+            "path": "/telemetry/data",
+            "name": "get_telemetry_data",
+            "method": "GET",
+            "descr": "Get reported telemetry data"
+        },
+        {
+            "path": "/topic-metrics",
+            "name": "list_all_topic_metrics",
+            "method": "GET",
+            "descr": "A list of all topic metrics of all nodes in the cluster"
+        },
+        {
+            "path": "/topic-metrics/:topic",
+            "name": "list_topic_metrics",
+            "method": "GET",
+            "descr": "A list of specfied topic metrics of all nodes in the cluster"
+        },
+        {
+            "path": "/topic-metrics",
+            "name": "register_topic_metrics",
+            "method": "POST",
+            "descr": "Register topic metrics"
+        },
+        {
+            "path": "/topic-metrics",
+            "name": "unregister_all_topic_metrics",
+            "method": "DELETE",
+            "descr": "Unregister all topic metrics"
+        },
+        {
+            "path": "/topic-metrics/:topic",
+            "name": "unregister_topic_metrics",
+            "method": "DELETE",
+            "descr": "Unregister topic metrics"
+        },
+        {
+            "path": "/modules/",
+            "name": "list_all_modules",
+            "method": "GET",
+            "descr": "List all modules in the cluster"
+        },
+        {
+            "path": "/nodes/:node/modules/",
+            "name": "list_node_modules",
+            "method": "GET",
+            "descr": "List all modules on a node"
+        },
+        {
+            "path": "/nodes/:node/modules/:module/load",
+            "name": "load_node_module",
+            "method": "PUT",
+            "descr": "Load a module"
+        },
+        {
+            "path": "/nodes/:node/modules/:module/unload",
+            "name": "unload_node_module",
+            "method": "PUT",
+            "descr": "Unload a module"
+        },
+        {
+            "path": "/nodes/:node/modules/:module/reload",
+            "name": "reload_node_module",
+            "method": "PUT",
+            "descr": "Reload a module"
+        },
+        {
+            "path": "/modules/:module/load",
+            "name": "load_module",
+            "method": "PUT",
+            "descr": "load a module in the cluster"
+        },
+        {
+            "path": "/modules/:module/unload",
+            "name": "unload_module",
+            "method": "PUT",
+            "descr": "Unload a module in the cluster"
+        },
+        {
+            "path": "/modules/:module/reload",
+            "name": "reload_module",
+            "method": "PUT",
+            "descr": "Reload a module in the cluster"
+        }
+    ],
+    "code": 0
+}
