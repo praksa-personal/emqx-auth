@@ -1,13 +1,13 @@
 import random
 from paho.mqtt import client as mqtt_client
 
-broker = 'localhost'
+broker = '10.30.10.47'
 port = 1883
 topic = "emqx/auth"
 # generate client ID with pub prefix randomly
-client_id = f'python-mqtt-{random.randint(0, 100)}'
-username = 'newUser'
-password = 'ab1234'
+this_client_id = f'python-mqtt-{random.randint(0, 100)}'
+username = 'Bob'
+password = 'farm1990M0O'
 
 def connect_mqtt() -> mqtt_client:
     def on_connect(client, userdata, flags, rc):
@@ -15,8 +15,7 @@ def connect_mqtt() -> mqtt_client:
             print("Connected to MQTT Broker!")
         else:
             print("Failed to connect, return code %d\n", rc)
-
-    client = mqtt_client.Client(client_id)
+    client = mqtt_client.Client(client_id=this_client_id, clean_session=True)
     client.username_pw_set(username, password)
     client.on_connect = on_connect
     client.connect(broker, port)
